@@ -10,6 +10,9 @@
 		2FDA370616E8165A00EAE1D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDA370516E8165A00EAE1D6 /* Foundation.framework */; };
 		2FDA370916E8165A00EAE1D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA370816E8165A00EAE1D6 /* main.m */; };
 		2FDA370D16E8165A00EAE1D6 /* iOSClass2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2FDA370C16E8165A00EAE1D6 /* iOSClass2.1 */; };
+		2FDA371516E816BC00EAE1D6 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA371416E816BC00EAE1D6 /* BankAccount.m */; };
+		2FDA371816E8303C00EAE1D6 /* SavingsAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA371716E8303C00EAE1D6 /* SavingsAccount.m */; };
+		2FDA371B16EF572F00EAE1D6 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA371A16EF572F00EAE1D6 /* BNRItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		2FDA370816E8165A00EAE1D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FDA370B16E8165A00EAE1D6 /* iOSClass2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSClass2-Prefix.pch"; sourceTree = "<group>"; };
 		2FDA370C16E8165A00EAE1D6 /* iOSClass2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = iOSClass2.1; sourceTree = "<group>"; };
+		2FDA371316E816BC00EAE1D6 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BankAccount.h; path = ../BankAccount.h; sourceTree = "<group>"; };
+		2FDA371416E816BC00EAE1D6 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BankAccount.m; path = ../BankAccount.m; sourceTree = "<group>"; };
+		2FDA371616E8303C00EAE1D6 /* SavingsAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavingsAccount.h; sourceTree = "<group>"; };
+		2FDA371716E8303C00EAE1D6 /* SavingsAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavingsAccount.m; sourceTree = "<group>"; };
+		2FDA371916EF572F00EAE1D6 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		2FDA371A16EF572F00EAE1D6 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				2FDA370816E8165A00EAE1D6 /* main.m */,
+				2FDA371916EF572F00EAE1D6 /* BNRItem.h */,
+				2FDA371A16EF572F00EAE1D6 /* BNRItem.m */,
+				2FDA371616E8303C00EAE1D6 /* SavingsAccount.h */,
+				2FDA371316E816BC00EAE1D6 /* BankAccount.h */,
+				2FDA371416E816BC00EAE1D6 /* BankAccount.m */,
+				2FDA371716E8303C00EAE1D6 /* SavingsAccount.m */,
 				2FDA370C16E8165A00EAE1D6 /* iOSClass2.1 */,
 				2FDA370A16E8165A00EAE1D6 /* Supporting Files */,
 			);
@@ -140,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FDA370916E8165A00EAE1D6 /* main.m in Sources */,
+				2FDA371516E816BC00EAE1D6 /* BankAccount.m in Sources */,
+				2FDA371816E8303C00EAE1D6 /* SavingsAccount.m in Sources */,
+				2FDA371B16EF572F00EAE1D6 /* BNRItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +228,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSClass2/iOSClass2-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iOSClass2;
 			};
 			name = Debug;
 		};
@@ -219,7 +237,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSClass2/iOSClass2-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = iOSClass2;
 			};
 			name = Release;
 		};
